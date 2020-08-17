@@ -1,7 +1,35 @@
-.row{
-    margin-bottom: 15px;
+.row-header{
+    margin: 0px auto;
+    padding: 0px auto;
 }
-.row > div{
-    border: 2px solid red;
-    background-color: khaki;
+.footer{
+    background-color: #D1C4E9;
+    margin: 0px auto;
+    padding: 20px 0px 20px 0px; 
 }
+.jumbotron{
+  padding: 70px 30px 70px 30px;
+  margin: 0px auto;
+  background-color: #9575CD;
+  color: floralwhite;
+  margin-bottom: 15px;
+}
+.row-content{
+  margin: 0px auto;
+  padding: 50px 0px 50px 0px;
+  border: 1px ridge;
+  min-height: 400px;
+}
+.address{
+    font-size: 80%;
+    margin: 0px;
+    color: black;
+}
+ body{
+  padding:50px 0px 0px 0px;
+  z-index:0;
+} 
+
+ .navbar-dark {
+   background-color: #512DA8;
+} 

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pseudo selector</title>
+  <style>
+    body {
+      background-color: coral;
+      /*margin: 0;not gone work for h1 becuase in h1 margin overriden
+      so we should write margin in *selector.*/
+      padding: 0;
+    }
+    *{margin:0;
+      box-sizing: border-box;
+    }
+    #box {
+      background-color: darkgoldenrod;
+      padding: 10px 10px 10px 10px;
+      border: 3px solid black;
+      margin-top: 50px;
+      width: 300px;
+      height: 50px;
+      overflow: auto;
+    }
+
+    #content {
+      background-color: rgb(73, 20, 220);
+    }
+
+    h1 {
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Box Model</h1>
+  <div id="box">
+    <div id="content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni, temporibus iusto delectus facerelorem40
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse unde eaque deleniti voluptates, accusamus tenetur aliquid aut, totam praesentium laboriosam earum asperiores placeat provident suscipit. Laboriosam ullam vitae rerum earum possimus. Accusamus delectus minus totam ab nihil impedit fuga veniam!
+      reiciendis aut.</div>
+  </div>
+</body>
+
+</html>

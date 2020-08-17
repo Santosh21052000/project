@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grid</title>
+</head>
+<style>
+    @media only screen and (max-width: 300px) {
+        body {
+            background-color: brown;
+        }
+    }
+
+    @media only screen and (min-width: 300px) and (max-width: 500px) {
+        body {
+            background-color: rgb(23, 211, 86);
+        }
+        .container {
+        
+        grid-template-areas: ' navbar navbar navbar navbar'
+            'aside aside aside aside'
+            'section section section section'
+            'footer footer footer footer';}
+            #aside{
+                display: none;
+            }
+        
+    }
+
+    @media only screen and (min-width: 500px) and (max-width: 700px) {
+        body {
+            background-color: rgb(243, 13, 82);
+        }
+        .container {
+        grid-gap: 1rem;
+        grid-template-areas: ' navbar navbar navbar navbar'
+            'aside aside aside aside'
+            'section section section section'
+            'footer footer footer footer';}
+          
+    }
+
+    @media only screen and (min-width: 700px) and (max-width: 1000px) {
+        body {
+            background-color: rgb(48, 17, 105);
+        }
+        span{
+             display: block;text-align: center;
+         }
+    }
+
+    .container {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas: ' navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer';
+    }
+
+    .item {
+        border: 2px solid black;
+        padding: 10px 15px;
+        background-color: blueviolet;
+    }
+
+    #navbar {
+        grid-area: navbar;
+    }
+
+    #section {
+        grid-area: section;
+    }
+
+    #aside {
+        grid-area: aside;
+    }
+
+    #footer {
+        grid-area: footer;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <nav class="item" id="navbar">
+            <span >home</span>
+            <span >about</span>
+            <span >contact</span>
+            <span >review</span>
+            </nav>
+        <section class="item" id="section">
+            <h2>learn css in hindi</h2>
+        </section>
+        <aside class="item" id="aside">
+            more about us
+        </aside>
+        <footer class="item" id="footer" > this is content for footer</footer>
+    </div>
+</body>
+
+</html>

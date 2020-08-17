@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>font size unit</title>
+    <style>
+      body{margin: 0px;padding: 0px;
+          color: white;
+          background-color: black;
+          background: url("https://source.unsplash.com/collection/190727/1600x900")no-repeat center center/cover;
+      }
+      header::before{
+          content: none;
+          background: url("https://source.unsplash.com/collection/190727/1600x900")no-repeat center center/cover;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          z-index: 100;
+          top:0;
+          left:0;
+          opcity:0px;
+      }
+      section{margin: 3px 5px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          border: 2px solid rgb(238, 10, 10);
+          height: 400px;
+          justify-content: center;
+      }
+      .navigation{font-size: 30px;
+          display: flex;
+          flex-direction: row;
+      }
+      li{
+          list-style: none;
+          padding: 34px 23px;
+      }
+      section::before{
+          content: "this is me";
+      }
+      p{
+          text-align: center;
+      }
+    </style>
+</head>
+<body>
+    <header>
+    <nav class="navbar">   
+      <ul class="navigation">
+        <li class="item" id="item-1">home</li>
+        <li class="item" id="item-2">services</li>
+        <li class="item" id="item-3">about</li>
+        <li class="item" id="item-4">contact</li>
+      </ul>
+    </nav>
+</header>
+    <section>
+        <h2>welcome to coding world</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, facere! Deserunt, natus. Sapiente molestiae delectus quasi reiciendis at voluptate reprehenderit commodi quis minima, vitae porro quas aspernatur, enim perferendis, sint dolores excepturi ducimus labore? Illum?</p>
+    </section>
+    <hr>
+</body>
+</html>
